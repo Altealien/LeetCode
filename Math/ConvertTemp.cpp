@@ -1,6 +1,5 @@
  #include <iostream>
  #include <vector>
- #include <iomanip>
  
  std::vector<double> convertTemperature(double celsius) {
         double toKelvin = celsius + 273.15;
