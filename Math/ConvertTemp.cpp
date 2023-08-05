@@ -1,3 +1,4 @@
+ //No.2469
  #include <iostream>
  #include <vector>
  
