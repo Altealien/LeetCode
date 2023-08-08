@@ -12,15 +12,13 @@ The richest customer is the customer that has the maximum wealth.*/
 using namespace std;
 
 int maximumWealth(vector<vector<int>>& accounts) {
-    int max{0},sum{0};
+    int maxWealth{0};
     for(int i =0; i< accounts.size();i++){
+       int tempWealth{0};
         for(int j=0; j<accounts[i].size();j++){
-            sum += accounts[i][j];
+            tempWealth += accounts[i][j];
         }
-        if(sum > max){
-            max =sum;
-        }
-        sum =0;
+      maxWealth=std::max(maxWealth, tempWealth);
     }
-    return max;
+    return maxWealth;
 }
