@@ -19,3 +19,10 @@ int countDigits(int num) {
 
     return count;
 }
+
+int main(){
+    int myNum;
+    std::cout << "Enter a number:";
+    std::cin >> myNum;
+    std::cout << "No. of digits that can divide " << myNum << " = " << countDigits(myNum) << ".\n";
+}
